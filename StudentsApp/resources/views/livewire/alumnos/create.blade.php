@@ -12,23 +12,28 @@
 				<form>
             <div class="form-group">
                 <label for="code"></label>
-                <input wire:model="code" type="text" class="form-control" id="code" placeholder="Code">@error('code') <span class="error text-danger">{{ $message }}</span> @enderror
+                <input wire:model="code" type="number" class="form-control" id="code" placeholder="Code">@error('code') 
+                <span class="error text-danger">{{ $message }}</span> @enderror
             </div>
             <div class="form-group">
                 <label for="name"></label>
-                <input wire:model="name" type="text" class="form-control" id="name" placeholder="Name">@error('name') <span class="error text-danger">{{ $message }}</span> @enderror
+                <input wire:model="name" type="text" class="form-control" id="name" placeholder="Name">@error('name') 
+                <span class="error text-danger">{{ $message }}</span> @enderror
             </div>
             <div class="form-group">
                 <label for="address"></label>
-                <input wire:model="address" type="text" class="form-control" id="address" placeholder="Address">@error('address') <span class="error text-danger">{{ $message }}</span> @enderror
+                <input wire:model="address" type="text" class="form-control" id="address" placeholder="Address">@error('address') 
+                <span class="error text-danger">{{ $message }}</span> @enderror
             </div>
             <div class="form-group">
                 <label for="mobile"></label>
-                <input wire:model="mobile" type="text" class="form-control" id="mobile" placeholder="Mobile">@error('mobile') <span class="error text-danger">{{ $message }}</span> @enderror
+                <input wire:model="mobile" type="number" class="form-control" id="mobile" placeholder="Mobile">@error('mobile') 
+                <span class="error text-danger">{{ $message }}</span> @enderror
             </div>
             <div class="form-group">
                 <label for="email"></label>
-                <input wire:model="email" type="text" class="form-control" id="email" placeholder="Email">@error('email') <span class="error text-danger">{{ $message }}</span> @enderror
+                <input wire:model="email" type="email" class="form-control" id="email" placeholder="Email">@error('email') 
+                <span class="error text-danger">{{ $message }}</span> @enderror
             </div>
 
                 </form>

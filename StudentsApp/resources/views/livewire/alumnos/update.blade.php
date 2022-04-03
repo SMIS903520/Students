@@ -13,7 +13,7 @@
 					<input type="hidden" wire:model="selected_id">
             <div class="form-group">
                 <label for="code"></label>
-                <input wire:model="code" type="text" class="form-control" id="code" placeholder="Code">@error('code') <span class="error text-danger">{{ $message }}</span> @enderror
+                <input wire:model="code" type="number" class="form-control" id="code" placeholder="Code">@error('code') <span class="error text-danger">{{ $message }}</span> @enderror
             </div>
             <div class="form-group">
                 <label for="name"></label>
@@ -25,11 +25,11 @@
             </div>
             <div class="form-group">
                 <label for="mobile"></label>
-                <input wire:model="mobile" type="text" class="form-control" id="mobile" placeholder="Mobile">@error('mobile') <span class="error text-danger">{{ $message }}</span> @enderror
+                <input wire:model="mobile" type="number" class="form-control" id="mobile" placeholder="Mobile">@error('mobile') <span class="error text-danger">{{ $message }}</span> @enderror
             </div>
             <div class="form-group">
                 <label for="email"></label>
-                <input wire:model="email" type="text" class="form-control" id="email" placeholder="Email">@error('email') <span class="error text-danger">{{ $message }}</span> @enderror
+                <input wire:model="email" type="email" class="form-control" id="email" placeholder="Email">@error('email') <span class="error text-danger">{{ $message }}</span> @enderror
             </div>
 
                 </form>
